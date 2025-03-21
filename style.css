@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ClickWithME - Home</title>
+    <title>Futuristic ClickWithME</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
+        <h1 class="glow">Welcome to ClickWithME 🚀</h1>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -18,14 +20,14 @@
     </header>
     
     <section id="home" class="hero">
-        <h1>Welcome to <span class="highlight">ClickWithME!</span> 🚀</h1>
-        <p>Your gateway to epic content, creativity, and connection.</p>
-        <button onclick="alert('You clicked!')">Click Me!</button>
+        <h2>Explore the Future</h2>
+        <p>Dive into the world of innovation, technology, and creativity.</p>
+        <button class="neon-button" onclick="alert('Welcome to the Future!')">Enter</button>
     </section>
 
     <section id="about">
         <h2>About Us</h2>
-        <p>ClickWithME is designed to bring awesome experiences to users who love innovation and creativity.</p>
+        <p>We bring futuristic ideas to life, pushing the boundaries of technology and imagination.</p>
     </section>
 
     <section id="contact">
@@ -40,8 +42,12 @@
             <label for="message">Message:</label>
             <textarea id="message" name="message" required></textarea>
 
-            <button type="submit">Send</button>
+            <button type="submit" class="neon-button">Send Message</button>
         </form>
     </section>
+
+    <footer>
+        <p>&copy; 2025 ClickWithME. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
