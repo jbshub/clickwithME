@@ -1,53 +1,117 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Futuristic ClickWithME</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-</head>
-<body>
-    <header>
-        <h1 class="glow">Welcome to ClickWithME 🚀</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="home" class="hero">
-        <h2>Explore the Future</h2>
-        <p>Dive into the world of innovation, technology, and creativity.</p>
-        <button class="neon-button" onclick="alert('Welcome to the Future!')">Enter</button>
-    </section>
+/* FUTURISTIC CYBERPUNK STYLE - CLICKWITHME */
 
-    <section id="about">
-        <h2>About Us</h2>
-        <p>We bring futuristic ideas to life, pushing the boundaries of technology and imagination.</p>
-    </section>
+/* Body - Dynamic Moving Background */
+body {
+    background: linear-gradient(45deg, #000000, #0d1b2a, #1b263b, #415a77, #778da9);
+    background-size: 400% 400%;
+    animation: backgroundFlow 10s infinite alternate;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form action="#" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+@keyframes backgroundFlow {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+/* Glowing Text Effects */
+.glow {
+    font-size: 2.5em;
+    text-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff, 0 0 40px #00eaff;
+}
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
+.holo-text {
+    font-size: 2em;
+    background: linear-gradient(45deg, #00eaff, #ff00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: flicker 1.5s infinite alternate;
+}
 
-            <button type="submit" class="neon-button">Send Message</button>
-        </form>
-    </section>
+@keyframes flicker {
+    0% { opacity: 1; }
+    50% { opacity: 0.8; }
+    100% { opacity: 1; }
+}
 
-    <footer>
-        <p>&copy; 2025 ClickWithME. All Rights Reserved.</p>
-    </footer>
-</body>
-</html>
+/* Neon Navigation Bar */
+nav {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 0 15px #00eaff;
+}
+
+nav a {
+    color: #00eaff;
+    font-size: 1.5em;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: all 0.3s;
+}
+
+nav a:hover {
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff;
+}
+
+/* Animated Neon Button */
+.neon-button {
+    background: transparent;
+    border: 2px solid #00eaff;
+    color: #00eaff;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #00eaff;
+}
+
+.neon-button:hover {
+    background: #00eaff;
+    color: black;
+    text-shadow: 0 0 5px black;
+}
+
+/* Contact Form - Futuristic Glowing Panel */
+form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin: 30px auto;
+    width: 50%;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #00eaff;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+button {
+    background: #00eaff;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background: #ff00ff;
+    color: white;
+    box-shadow: 0 0 10px #ff00ff;
+}
